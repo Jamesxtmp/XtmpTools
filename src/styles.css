@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ddd;
+    font-family: Calibri;
+}
+body{
+    background-color: #111;
+}
+/* Smartphone */
+@media screen and (max-width:767px) {
+    body{
+        --main-size: 500px;
+    }
+}
+/* Tablet */
+@media screen and (min-width:767px) and (max-width:1023px) {
+    body{
+        --main-size: 500px;
+    }
+}
+/* Desktop */
+@media screen and (min-width:1024px) {
+    .main-layout{
+        --main-size: 500px;
+    }
+}
