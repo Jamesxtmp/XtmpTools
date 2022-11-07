@@ -4,9 +4,14 @@
     box-sizing: border-box;
     color: #ddd;
     font-family: Calibri;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 body{
     background-color: #111;
+    --background-1: #222;
+    --background-2: #333;
+    --font-color-2: #999;
 }
 /* Smartphone */
 @media screen and (max-width:767px) {
