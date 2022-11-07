@@ -1,4 +1,20 @@
-<div class="login-google-button">
+<script>
+  import { auth } from '../firebase/sdkFire'
+  import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+  import { user, isLogin } from '../store/store'
+
+  const login = async() => {
+    try {
+      const provider = new GoogleAuthProvider();
+      const res = await signInWithPopup(auth, provider)
+      $user = res.user
+    } catch (error) {
+      console.log( error )
+    }
+  }
+</script>
+
+<div class="login-google-button" on:click={login} on:keydown={login}>
   <span class="material-symbols-outlined"> login </span>
   <img src="google.svg" alt="" />
 </div>

@@ -1,6 +1,11 @@
 <script>
   import "../styles.css";
   import ButtonLoginGoogle from "../lib/ButtonLoginGoogle.svelte";
+  import { user, isLogin } from '../store/store'
+  
+  if ( $isLogin ) {
+    console.log( $user )
+  }
 </script>
 
 <div class="main-layout">
@@ -10,6 +15,10 @@
         <h2>@Jamesxtmp</h2>
     </div>
     <div class="rigth-h">
+      {#if $isLogin}
+        <h2>{ $user.displayName }</h2>
+        <h2>Login</h2>
+      {/if}
       <ButtonLoginGoogle />
     </div>
   </header>
