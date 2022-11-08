@@ -16,10 +16,11 @@
     </div>
     <div class="rigth-h">
       {#if $isLogin}
+        <img src={ $user.photoURL } alt="perfil" />
         <h2>{ $user.displayName }</h2>
-        <h2>Login</h2>
+      {:else}
+        <ButtonLoginGoogle />
       {/if}
-      <ButtonLoginGoogle />
     </div>
   </header>
   <slot />
@@ -35,6 +36,7 @@
     background-color: var(--background-2);
     justify-content: space-between;
     align-items: center;
+    height: 60px;
   }
   .left-h{
     padding-left: 8px;
@@ -54,5 +56,10 @@
     font-size: .8em;
     padding-left: 4px;
     color: var(--font-color-2);
+  }
+  img {
+    border-radius: 50%;
+    height: 30px;
+    margin: 5px 0;
   }
 </style>

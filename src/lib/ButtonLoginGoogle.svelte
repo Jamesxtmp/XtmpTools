@@ -3,11 +3,15 @@
   import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
   import { user, isLogin } from '../store/store'
 
+  // TODO ventanas en celular no funcionan
+  // TODO no hay las imagenes de perfil no cargan bien
   const login = async() => {
     try {
       const provider = new GoogleAuthProvider();
       const res = await signInWithPopup(auth, provider)
       $user = res.user
+      $isLogin = true
+      console.log( res.user )
     } catch (error) {
       console.log( error )
     }
