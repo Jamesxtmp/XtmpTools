@@ -5,6 +5,7 @@
 
   // TODO ventanas en celular no funcionan
   // TODO no hay las imagenes de perfil no cargan bien
+  // TODO se reinicia al refrescar
   const login = async() => {
     try {
       const provider = new GoogleAuthProvider();
