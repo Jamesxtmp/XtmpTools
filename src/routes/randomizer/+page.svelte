@@ -48,7 +48,7 @@
 
 <style>
   .randomizer{
-
+    display: block;
   }
   .items{
     margin: 10px auto;
@@ -139,6 +139,6 @@
     margin: auto;
   }
   .results .item div{
-
+    display: block;
   }
 </style>
