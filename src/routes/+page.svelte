@@ -4,6 +4,7 @@
 </script>
 
 <div class="main-page">
+
   <div class="top-tools">
     <div class="top-tool-left"></div>
     <div class="top-tool-center">
@@ -11,39 +12,44 @@
     </div>
     <div class="top-tool-rigth"></div>
   </div>
-  <!-- TODO añadir respuesta a todo el li -->
+
   <nav>
     <ul>
+
       <li>
-        <div class="nav-element">
-          <span class="material-symbols-outlined"> shuffle </span><a
-            href="/randomizer">Organizador Aleatorio</a
-          >
-        </div>
+        <a href="/randomizer">
+          <div class="nav-element">
+            <span class="material-symbols-outlined"> shuffle </span>
+            <p>  
+              Organizador Aleatorio
+            </p>
+          </div>
+        </a> 
       </li>
       <li>
-        <div class="nav-element">
-          <span class="material-symbols-outlined"> calculate </span><a
-            href="/matricez">Matricez</a
-          >
-        </div>
+        <a href="/matrices">
+          <div class="nav-element">
+            <span class="material-symbols-outlined"> function </span>
+            <p>  
+              Matrices
+            </p>
+          </div>
+        </a> 
       </li>
       <li>
-        <div class="nav-element">
-          <span class="material-symbols-outlined"> shuffle </span><a
-            href="/randomizer">Organizador Aleatorio</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="nav-element">
-          <span class="material-symbols-outlined"> shuffle </span><a
-            href="/randomizer">Organizador o</a
-          >
-        </div>
-      </li>
+        <a href="/randomizer">
+          <div class="nav-element">
+            <span class="material-symbols-outlined"> shuffle </span>
+            <p>  
+              Organizador Aleatorio
+            </p>
+          </div>
+        </a> 
+      </li> 
+
     </ul>
   </nav>
+
 </div>
 
 <style>
@@ -61,26 +67,30 @@
     width: 60%;
   }
 
+
   ul {
+    margin-top: 10px;
     list-style: none;
+  }
+  li {
+    background-color: var(--background-2);
+    height: 45px;
+    width: 70%;
+    margin: 8px auto;
+    border-radius: 8px;
+  }
+  a {
+    height: 45px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
   }
   .nav-element {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
   }
-  li {
-    display: flex;
-    height: 45px;
-    text-align: center;
-    background-color: var(--background-2);
-    width: 70%;
-    margin: 8px auto;
-    padding: 4px 4px;
-    border-radius: 8px;
+  .nav-element span{
+    margin: 0 8px;
   }
-  a {
-    margin-left: 4px;
-    text-decoration: none;
-  }
+  
 </style>

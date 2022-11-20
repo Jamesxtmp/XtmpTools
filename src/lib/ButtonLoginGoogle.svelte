@@ -1,6 +1,6 @@
 <script>
   import { auth } from '../firebase/sdkFire'
-  import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+  import { signInWithPopup, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
   import { user, isLogin } from '../store/store'
 
   // TODO ventanas en celular no funcionan

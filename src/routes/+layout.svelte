@@ -16,6 +16,7 @@
     </div>
     <div class="rigth-h">
       {#if $isLogin && $user.photoURL }
+        <h2>{ $user.photoURL }</h2>
         <img src={ $user.photoURL } alt="perfil" />
         <h2>{ $user.displayName }</h2>
       {:else}
